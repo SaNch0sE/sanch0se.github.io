@@ -108,3 +108,48 @@ button {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 450px) {
+  #robot{
+    right: 0;
+    top: 350px;
+  }
+  #botOtvet{
+    right: 160px;
+    top: 350px;
+  }
+  #global-map{
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  #robot{
+    right: 0;
+    top: 360px;
+  }
+  #botOtvet{
+    right: 145px;
+    top: 350px;
+  }
+  #global-map{
+    width: 100%;
+  }
+  form{
+    top: 200px;
+  }
+}
+@media (max-width: 320px) {
+  #robot{
+    right: 0;
+    top: 375px;
+  }
+  #botOtvet{
+    right: 110px;
+    top: 350px;
+  }
+  #map{
+    width: 100%;
+  }
+  form {
+    top: 200px;
+  }
+}
