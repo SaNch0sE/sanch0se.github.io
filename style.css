@@ -44,7 +44,6 @@ input{
   padding-left: 15px;
   color: rgb(14, 12, 12);
   font-size: 16px;
-  z-index: 1;
 }
 button {
   cursor: pointer;
@@ -74,12 +73,14 @@ button {
 /*Конец кнопки поиска города*/
 
 #botOtvet{
-  width: 200px;
-  height: 42px;
+  min-width: 200px;
+  min-height: 42px;
   background-color: rgb(216, 214, 203);
   border: solid 1.5px rgb(71, 70, 70);
   text-align: center;
   margin-left: 45%;
+  padding-left: 3px;
+  padding-right: 3px;
   position: absolute;
   right: 15%;
   border-top-left-radius: 25px;

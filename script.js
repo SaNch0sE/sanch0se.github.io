@@ -67,7 +67,7 @@ function add(global_city)
 	}
 	if (samaya_vazhnaya_peremennaya == 1)
 	{
-		alert("Слово не існує або було використано");
+		document.getElementById('out').innerText = "Слово не існує або було використано";
 		document.getElementById('inp').value = "";
 	}
 
@@ -83,7 +83,7 @@ function add(global_city)
 			if(slovo != undefined)
 			{
 				global_city[nomer].splice(chislo, 1);
-				document.getElementById('out').innerHTML= slovo;
+				document.getElementById('out').innerText = slovo;
 				document.getElementById('inp').value = "";
 			}
 			else
