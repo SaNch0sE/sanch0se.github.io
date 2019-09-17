@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.ico" type="image/icon">
+    <title>Країни світу</title>
+</head>
+<body>
+    <header>
+        <div id="global-map">
+            <img src="map.png" width="75%" alt="Карта мира">
+        </div>
+    </header>
+    <main>
+        <div id="charr">
+            <form id="from">
+                <input autocomplete="off" tabindex="1" type="text" onkeypress="enter(event); document.getElementById('inp').focus();" placeholder="Введи країну будь ласка😀..." id="inp" autofocus>
+                <button type="button" onclick="add(city)"><span id="galochka">&#10004;</span></button>
+                
+            </form>
+            <div id="botOtvet">
+                    <img src="robot.gif" alt="Анимация робота" width="250px" height="200px" id="robot">
+                    <p id="out"></p>
+                    
+                </div>
+        </div>
+     <div>
+        </div>
+    </main>
+    <script text="text/javascript" src="script.js"></script>
+</body>
+</html>

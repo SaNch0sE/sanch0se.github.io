@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(153, 209, 202);
+    overflow: hidden;
+}
+
+/*Стили для карты мира*/
+
+#global-map{
+    text-align: center;
+}
+#charr{
+    text-align: center; 
+    border-radius: 10%;
+}
+/*Конец стилей карты мира*/
+
+
+/*Кнопка поиска города*/
+
+* {box-sizing: border-box;}
+form {
+  width: 26%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 15%;
+  background-color: rgb(201, 200, 190);
+  border: solid 1.5px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: relative;
+  position: static;
+  position: absolute;
+}
+input{
+  border: none;
+  outline: none;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: 50px;
+  padding-left: 15px;
+  color: rgb(14, 12, 12);
+  font-size: 16px;
+  z-index: 1;
+}
+button {
+  cursor: pointer;
+  border: solid 0.5px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  position: relative;
+  position: static;
+  position: absolute;
+  left: 86%;
+  width: 51px;
+  height: 51px;
+  background-color: rgb(100, 250, 62);
+}
+#galochka{
+  content: "✔";
+  font-size: 30px; 
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+}
+/*Конец кнопки поиска города*/
+
+#botOtvet{
+  width: 200px;
+  height: 42px;
+  background-color: rgb(216, 214, 203);
+  border: solid 1.5px rgb(71, 70, 70);
+  text-align: center;
+  margin-left: 45%;
+  position: absolute;
+  right: 15%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 20px;
+}
+#text{
+  color: black;
+  font-size: 40px;
+  text-align: center;
+}
+#robot{
+  position: absolute;
+}
+
+
+@media (max-width: 400px){
+  from{
+    width: 50%;
+  }
+  button {
+    left: 20%;
+  }
+  body{
+    flex-wrap: wrap;
+  }
+}
