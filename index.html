@@ -10,22 +10,20 @@
 </head>
 <body>
     <header>
-        <div id="global-map">
-            <img src="map.png" width="75%" alt="Карта мира">
-        </div>
+        <div id="map"><img src="map.png" alt="Карта мира" width="75%"></div>
     </header>
     <main>
         <div id="charr">
             <form id="from">
-                <input autocomplete="off" tabindex="1" type="text" onkeypress="enter(event); document.getElementById('inp').focus();" placeholder="Введи країну будь ласка😀..." id="inp" autofocus>
-                <button type="button" onclick="add(city)"><span id="galochka">&#10004;</span></button>
-                
+                <div id="input"><input autocomplete="off" type="text" onkeypress="enter(event)" placeholder="Введіть країну будь ласка" id="inp"></div>
+                <div id="button"></div><button type="button" onclick="add(city)">
+                    <span id="galochka">&#10004;</span>
+                </button>
             </form>
             <div id="botOtvet">
-                    <img src="robot.gif" alt="Анимация робота" width="250px" height="200px" id="robot">
-                    <p id="out"></p>
-                    
-                </div>
+                <p id="out"></p>
+            </div>
+            <img src="robot.gif" alt="Анимация робота" width="250px" height="200px" id="robot">
         </div>
      <div>
         </div>
