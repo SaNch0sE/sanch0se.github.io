@@ -169,6 +169,16 @@ body{
 }
 
 @media (max-width: 320px){
+form{
+	position: fixed;
+	top: 30%;
+	width: 68%;
+}
+button {
+	position: fixed;
+	top: 30%;
+	left: 80%;
+}
 	.score{
 	left:60%;
 	top: 0%;
