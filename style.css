@@ -129,16 +129,20 @@ button {
 
 @media (max-width: 414px){
 form{
+	position: fixed;
+	top: 30%;
 	width: 68%;
 }
 button {
+	position: fixed;
+	top: 30%;
 	left: 80%;
 }
 body{
 	flex-wrap: wrap;
 }
 #botOtvet{
-	position: absolute;
+	position: fixed;
 	height: 10%;
 	margin-left: 0;
 	width: 30%;
