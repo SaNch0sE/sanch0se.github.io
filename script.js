@@ -25,6 +25,24 @@ let city = [[ "Австралійський Союз", "Австрія", "Азе
 	[ "Еквадор", "Екваторіальна Гвінея", "Еритрея", "Естонія", "Ефіопія"],
 	[ "Ямайка", "Японія"]];
 
+let time = 20;
+let score = 0;
+document.getElementById('timer_inp').innerText = time;
+document.getElementById('score').innerText = score;
+
+function timer(){
+	let obj = document.getElementById('timer_inp');
+	obj.innerHTML--;
+
+	if(obj.innerHTML == 0){
+		alert('Game over');
+		setTimeout(function(){},1000);
+		window.location.reload(true);
+	}
+	else
+		setTimeout(timer,1000);
+}
+
 function enter(event) {
   // Number 13 is the "Enter" key on the keyboard
   if (event.keyCode === 13) {
@@ -34,6 +52,8 @@ function enter(event) {
     add(city);
   }
 }
+
+setTimeout(timer,1000);
 
 function add(global_city)
 {
@@ -67,12 +87,23 @@ function add(global_city)
 	}
 	if (samaya_vazhnaya_peremennaya == 1)
 	{
-		document.getElementById('out').innerText = "Слово не існує або було використано";
+		document.getElementById('out').innerText = "Країна не існує або була використана";
 		document.getElementById('inp').value = "";
+		score = score - 100;
+		document.getElementById('score').innerHTML = score;
+		if(score < 0){
+		alert('Game over');
+		window.location.reload(true);
+	}
 	}
 
 	if (samaya_vazhnaya_peremennaya == 0)
+	{
 	    c = word.slice(-1);
+		document.getElementById('timer_inp').innerHTML = time;
+		score = score + 100;
+		document.getElementById('score').innerHTML = score;
+	}
 
 	for (let r of latters)
 	{

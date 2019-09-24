@@ -1,12 +1,45 @@
+@font-face {
+	font-family: '8BITWONDERNominal';
+	src: url("8-bit_wo-webfont.woff") format("woff"),
+	url("8-bit_wo-webfont.otf") format("opentype");
+}
+
 body{
     background-color: rgb(153, 209, 202);
     overflow: hidden;
+	font-family: '8BITWONDERNominal';
+	font-weight: normal;
+	font-style: normal;
+}
+
+#timer_inp{
+	position: fixed;
+	z-index: 2;
+	margin: 0px;
+}
+
+.score{
+	font-family: '8BITWONDERNominal';
+	font-weight: normal;
+	font-style: normal;
+	position: fixed;
+	left:45%;
+	top: 80%;
+	z-index: 1;
+}
+
+#score{
+	top: 85%;
 }
 
 /*Стили для карты мира*/
 
-#map{
+#global-map{
     text-align: center;
+}
+#charr{
+    text-align: center; 
+    border-radius: 10%;
 }
 /*Конец стилей карты мира*/
 
@@ -15,121 +48,131 @@ body{
 
 * {box-sizing: border-box;}
 form {
-  background-color: rgb(201, 200, 190);
-  border: solid 1.5px;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  display: flex;
-  position: absolute;
-  width: 300px;
-  height: 52px;
-  left: 10%;
-}
+	width: 26%;
+	display: flex;
+	flex-direction: row;
+	margin-left: 10%;
+	background-color: rgb(201, 200, 190);
+	border: solid 1.5px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	position: relative;
+	position: static;
+	position: absolute;
+	}
 input{
-  border: none;
-  outline: none;
-  background: transparent;
-  width: 100%;
-  height: 50px;
-  padding-left: 15px;
-  color: rgb(14, 12, 12);
-  font-size: 16px;
-  display: flex;
+	border: none;
+	outline: none;
+	background: transparent;
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	height: 50px;
+	padding-left: 12px;
+	color: rgb(14, 12, 12);
+	font-size: 16px;
 }
 button {
-  cursor: pointer;
-  border: solid 1px;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  background-color: rgb(100, 250, 62);
-  width: 50px;
-  height: 50px;  
-  display: flex;
-  position: absolute;
-  left: 84.5%;
+	cursor: pointer;
+	border: solid 0.5px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border: solid 1.5px;
+	display: flex;
+	flex: 2;
+	flex-direction: row;
+	position: relative;
+	position: static;
+	position: absolute;
+	left: 35%;
+	width: 51px;
+	height: 53px;
+	background-color: rgb(100, 250, 62);
 }
 #galochka{
-  content: "✔";
-  font-size: 30px; 
-  margin-left: 5px;
+	content: "✔";
+	font-size: 30px; 
+	display: flex;
+	flex-direction: row;
+	margin-left: 5px;
 }
-/*Конец кнопки поиска города*/
+	/*Конец кнопки поиска города*/
 
 #botOtvet{
-  text-align: center;
-  background-color: rgb(216, 214, 203);
-  border: solid 1.5px rgb(71, 70, 70);
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-right-radius: 20px;
-  right: 20%;
-  width: 200px;
-  height: 50px;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 260px;
-  top: 500px;
-
+	min-width: 200px;
+	min-height: 42px;
+	background-color: rgb(216, 214, 203);
+	border: solid 1.5px rgb(71, 70, 70);
+	text-align: center;
+	margin-left: 45%;
+	padding-left: 3px;
+	padding-right: 3px;
+	position: absolute;
+	right: 15%;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-top-right-radius: 20px;
 }
-#out{
-  color: black;
-  font-size: 40px;
-  text-align: center;
+#text{
+	color: black;
+	font-size: 40px;
+	text-align: center;
 }
 #robot{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 90px;
-  top: 500px;
+	position: absolute;
 }
-@media (max-width: 450px) {
-  #robot{
-    right: 0;
-    top: 350px;
-  }
-  #botOtvet{
-    right: 160px;
-    top: 350px;
-  }
-  #global-map{
-    width: 100%;
-  }
+
+
+@media (max-width: 414px){
+form{
+	width: 68%;
 }
-@media (max-width: 400px) {
-  #robot{
-    right: 0;
-    top: 360px;
-  }
-  #botOtvet{
-    right: 145px;
-    top: 350px;
-  }
-  #global-map{
-    width: 100%;
-  }
-  form{
-    top: 200px;
-  }
+button {
+	left: 80%;
 }
-@media (max-width: 320px) {
-  #robot{
-    right: 0;
-    top: 375px;
-  }
-  #botOtvet{
-    right: 110px;
-    top: 350px;
-  }
-  #map{
-    width: 100%;
-  }
-  form {
-    top: 200px;
-  }
+body{
+	flex-wrap: wrap;
+}
+#botOtvet{
+	position: fixed;
+	height: 10%;
+	margin-left: 0;
+	width: 30%;
+	left: 15%;
+	top: 50%;
+}
+.score{
+	left:48%;
+	top: 0%;
+	margin: 0;
+}
+
+#score{
+	left:82%;
+	top: 0.5%;
+}
+#robot{
+	position: fixed;
+	left: 45%;
+}
+#timer_inp{
+	margin: 0px;
+}
+}
+
+@media (max-width: 320px){
+	.score{
+	left:60%;
+	top: 0%;
+	margin: 0;
+}
+
+#score{
+	left:88%;
+	top: 5%;
+}
 }

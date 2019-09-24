@@ -8,26 +8,30 @@
     <link rel="icon" href="icon.ico" type="image/icon">
     <title>Країни світу</title>
 </head>
-<body>
-    <header>
-        <div id="map"><img src="map.png" alt="Карта мира" width="75%"></div>
-    </header>
-    <main>
-        <div id="charr">
-            <form id="from">
-                <div id="input"><input autocomplete="off" type="text" onkeypress="enter(event)" placeholder="Введіть країну будь ласка" id="inp"></div>
-                <div id="button"></div><button type="button" onclick="add(city)">
-                    <span id="galochka">&#10004;</span>
-                </button>
-            </form>
-            <div id="botOtvet">
-                <p id="out"></p>
-            </div>
-            <img src="robot.gif" alt="Анимация робота" width="250px" height="200px" id="robot">
-        </div>
-     <div>
-        </div>
-    </main>
-    <script text="text/javascript" src="script.js"></script>
-</body>
+    <body>
+		<header>
+			<h3 id="timer_inp"></h3>
+			<div id="global-map">
+				<img src="map.png" width="75%" alt="Карта мира">
+			</div>
+		</header>
+		<main>
+			<div id="charr">
+				<form id="from">
+					<input autocomplete="off" tabindex="1" type="text" onkeypress="enter(event); document.getElementById('inp').focus();" placeholder="Введи країну будь ласка😀..." id="inp" autofocus>
+				</form>
+				<button type="button" onclick="add(city)"><span id="galochka">&#10004;</span></button>
+				<h2 class="score">SCORE:</h2>
+				<h3 class="score" id="score"></h3>
+				<div id="botOtvet">
+						<img src="robot.gif" alt="Анимация робота" width="250px" height="200px" id="robot">
+						<p id="out"></p>
+						
+					</div>
+			</div>
+		 <div>
+			</div>
+		</main>
+		<script text="text/javascript" src="script.js"></script>
+	</body>
 </html>
